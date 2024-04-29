@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- relacionar con css bootstrap
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- relacionar el archivo html con el archivo css -->
+  <link rel="stylesheet" href="CSS/main.css">
+  <!-- registrarse en fontawesome y te envia la siguiente linea para los iconos-->
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <title>Actividad Práctica 07 - Bootstrap</title>
+</head>
+
+<body>
+  <header>
+    <h1>La cocina de San</h1>
+    <!-- INICIO BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP 
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="acercade.html">Acerca de mi</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="regristrese.html">Regístrese</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP -->
+  </header>
+
+
+  <menu>
+    <h2>Contacto</h2>
+    <p>Envíame tus sugerencias de recetas a mi correo:
+      <a href="sandra.lopez.code@gmail.com">sandra.lopez.codigo@gmail.com</a>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </menu>
+  <footer>
+    <!-- iconos y hipervinculos -->
+    <a class="redsoc" href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
+        aria-hidden="true"></i></a>
+    <br>
+    <P>Derechos de autor @2024</P>
+    <br>
+  </footer>
+</body>
+
+</html>
