@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- relacionar con el archivo descargado de favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <!-- relacionar con css bootstrap
-https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
--->
+  <!-- relacionar con css bootstrap 
+  https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -16,7 +21,7 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
   <link rel="stylesheet" href="CSS/main.css">
   <!-- registrarse en fontawesome y te envia la siguiente linea para los iconos-->
   <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-  <title>Actividad Práctica 07 - Bootstrap</title>
+  <title>La cocina de San</title>
 </head>
 
 <body>
@@ -25,7 +30,7 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
     <!-- INICIO BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP 
 https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
 -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" >
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,10 +38,11 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Home</a>
+         
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
             <li><a href="acercade.html">Acerca de mi</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="regristrese.html">Regístrese</a></li>
@@ -53,22 +59,22 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
   </header>
  
 
-  <menu>
+  <menu class="sucursales">
     <h2>Sucursales</h2>
     <p>Villa Devoto:
       <a href="https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+4800,+C1419HZW+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.610684,-58.518334,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb7d0c18122cf:0x16e318de5f9e91fa!8m2!3d-34.610684!4d-58.518334!16s%2Fg%2F11c5q8zs0r?entry=ttu"
-        target="_blank">Av. Beiro 4800, Cdad. Autónoma de Buenos Aires</a>
+        target="_blank">Av. Beiro 4800.</a>
     <p>Urquiza:
       <a href="https://www.google.com/maps/place/Av+Triunvirato+3000,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5847855,-58.4647392,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb60a440ef8fb:0x4e34d3fd9e77ca4b!8m2!3d-34.5847855!4d-58.4647392!16s%2Fg%2F11bw44cxrw?entry=ttu"
-        target="_blank">Av Triunvirato 3000, Cdad. Autónoma de Buenos Aires</a>
+        target="_blank">Av Triunvirato 3000.</a>
     </p>
     <p>Belgrano:
       <a href="https://www.google.com/maps/place/Av.+Cabildo+3200,+C1429AAP+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5528754,-58.4653203,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb682dda080b7:0x5467664e274a1d00!8m2!3d-34.5528754!4d-58.4653203!16s%2Fg%2F11c241t5nt?entry=ttu"
-        target="_blank">Av. Cabildo 3200, Cdad. Autónoma de Buenos Aires</a>
+        target="_blank">Av. Cabildo 3200.</a>
     </p>
     <p>Recoleta:
       <a href="https://www.google.com/maps/place/Av.+Callao+200,+C1022AAP+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6066583,-58.3923038,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac237b5aeb1:0xd9af9d9a98aa7c23!8m2!3d-34.6066583!4d-58.3923038!16s%2Fg%2F11c88whn9m?entry=ttu"
-        target="_blank">Av. Callao 200, Cdad. Autónoma de Buenos Aires</a>
+        target="_blank">Av. Callao 200.</a>
     </p>
 
     <iframe
@@ -100,9 +106,9 @@ https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
         aria-hidden="true"></i></a>
     <a class="redsoc" href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
         aria-hidden="true"></i></a>
-    <br>
-    <P>Derechos de autor @2024</P>
-    <br>
+     
+    <P>Derechos de autor sandra.lopez.codigo@gmail.com</P>
+ 
   </footer>
 </body>
 
