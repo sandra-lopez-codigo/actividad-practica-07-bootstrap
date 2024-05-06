@@ -29,7 +29,7 @@ h3 {
 
 
 header {
-    background-image: url(/imagenes/menu\ y\ footer2\ .jpg);
+    background-image: url(./imagenes/menu\ y\ footer2\ .jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ iframe {
 }
 
 footer {
-    background-image: url(/imagenes/menu\ y\ footer2\ .jpg);
+    background-image: url(./imagenes/menu\ y\ footer2\ .jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
