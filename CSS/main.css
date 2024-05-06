@@ -37,25 +37,40 @@ header {
     width: 100%;
 }
 
-.nav-enlace,
-.menu-enlace {
-    /* background-color: gray; */
-    color: white;
-    text-decoration: none;
-    padding: 0.3%;
-    /*5px*/
-    border-radius: 5px;
-    margin: 0.3%;
-    /*5px*/
-    font-size: 1.5vw;
-    left: 0;
+
+.contenedor-receta-del-dia {
+    background-color: antiquewhite;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-menu img {
-    height: 70vh;
-    width: 40%;
-    margin: 20px;
+.receta-img,
+.receta-titulo-enlace {
+    height: 30vh;
+    width: 90%;
+    margin: 5vh 5% 5vh 5%;
 }
+
+.receta-img img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.receta-titulo-enlace,
+h5,
+p {
+    text-align: left;
+    font-weight: bold;
+    line-height: 3vh;
+    font-size: 1.5rem;
+}
+
 
 table {
     border: black solid 2px;
@@ -74,7 +89,7 @@ th {
 p,
 ul {
     text-align: justify;
-    margin: 0 5%;
+
 
 }
 
@@ -89,16 +104,22 @@ ul {
     color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a,
+.menu-enlace {
+    color: white;
     background-color: rgb(223, 76, 76);
     border-radius: 9px;
     font-size: 2vh;
     margin-left: 5px;
     padding: 4px !important;
+    text-decoration: none;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover,
+.menu-enlace:hover {
+    color: white;
     background-color: #4CAF50 !important;
+    text-decoration: none;
 }
 
 /* carrusel */
@@ -128,32 +149,29 @@ ul {
 
 /* fin clases en css bootstrap */
 
-menu img {
-    height: 40vh;
-    width: 30%;
-    margin-left: 30px;
-}
-
-menu h3,
-menu h2 {
-    margin-left: 30px;
-}
-
 
 iframe {
-    margin: 5% 0 5% 5%;
+    margin: 5% 0 5% 3%;
 }
 
 /* inicio para que el menú se posiciones al final de la página */
 .row,
 .contacto {
     min-height: 53vh;
+    padding: 2%;
 }
 
 /* fin para que el menú se posiciones al final de la página */
 
 .sucursales {
     line-height: 30px;
+}
+
+.contacto,
+.sucursales,
+.formulario-menu,
+.nuestros-clientes {
+    padding: 0 2%;
 }
 
 footer {
@@ -176,7 +194,8 @@ footer p {
     text-align: center;
     color: white;
     margin-top: 2vh;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 /*red sociales*/
@@ -193,9 +212,9 @@ footer p {
 /*imagenes*/
 
 .img-cliente {
-    height: 60vh;
+    height: 55vh;
     width: 30%;
-    margin-left: 11%;
+    margin: 0 5% 3vh 5%;
 }
 
 /* .imgindex, .imgabout{
@@ -205,7 +224,7 @@ footer p {
 /*fomulario*/
 label,
 input {
-    font-size: 1.0vw;
+    font-size: 15px;
 }
 
 input[type=text],
@@ -219,7 +238,7 @@ input[type=text],
 input[type=textArea],
 select {
     width: 80%;
-    padding: 1vw;
+    padding: 10px;
     /*12px 20px;*/
     margin: 1vw;
     /*8px 0;*/
@@ -231,11 +250,11 @@ select {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 60%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 20%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -249,9 +268,9 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 2%;
-    margin: 1% 20%;
+    margin: 1% 10%;
 }
 
 textarea {
-    width: 60%;
+    width: 50%;
 }
